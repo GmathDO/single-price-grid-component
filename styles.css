@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Ligth_Cyan: hsl(179, 62%, 48%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    background-color: var(--Light_Gray);
+    font-size: 16px;
+}
+
+.main-container{
+    width: 311px;
+    height: 722px;
+    margin: 72px auto 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cards{
+    box-sizing: border-box;
+}
+
+/*-------------------------Card1-------------------------*/
+.card1{
+    height: 267px;
+    padding: 30px 25px;
+    background-color: white;
+}
+
+.card1 .title{
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    color: var(--Cyan);
+}
+
+.card1 .second-title{
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: var(--Bright_Yellow);
+}
+
+.card1 p{
+    font-size: 0.86em;
+    color: var(--Grayish_Blue);
+    line-height: 27px;
+}
+
+/*-------------------------Card2-------------------------*/
+.card2{
+    height: 228px;
+    background-color: var(--Cyan);
+}
+
+.card2 h2{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.price{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.price-number{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.price .text-price{
+    font-size: 16px;
+    color: var(--Light_Gray);
+}
+
+.card2 p{
+    margin-bottom: 30px;
+}
+
+.sign-up{
+    width: 100%;
+    height: 48px;
+    color: white;
+    background-color: var(--Bright_Yellow);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+
+.card2, .card3{
+    padding: 25px;
+    color: var(--Light_Gray);
+}
+
+/*-------------------------Card3-------------------------*/
+.card3{
+    height: 227px;
+    background-color: var(--Ligth_Cyan);
+    padding: 20px 25px;
+}
+
+.card3 h2{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.card3 .reasons-list{
+    font-size: 0.86em;
+    list-style: none;
+    line-height: 22px;
+}
+
+/*-------------------------Footer-------------------------*/
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*-------------------------(desktop)-------------------------*/
+@media screen and (min-width: 800px) {
+    .main-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 635px;
+        height: 475px;
+        margin: 162px auto 70px;
+        box-sizing: border-box;
+    }
+
+    .cards{
+        padding: 40px;
+    }
+
+    .card1{
+        height: 216px;
+        grid-column: 1/3;
+    }
+
+    .card2{
+        height: 259px;
+        width: 317px;
+        grid-column: 1/2;
+    }
+
+    .card3{
+        width: 318px;
+        height: 259px;
+    }
+}
